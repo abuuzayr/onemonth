@@ -1,0 +1,24 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded" role="navigation">
+
+  <!-- As a link -->
+  <nav class="navbar navbar-light bg-faded">
+  <%= link_to "One Month App", root_path, class: "navbar-brand" %>
+  </nav>
+
+
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">
+        <%= link_to "Home", root_path %>
+        <span class="sr-only">(current)</span>
+      </a>
+      <a class="nav-item nav-link" href="#">
+        <%= link_to "About", about_path %>
+      </a>
+    </ul>
+  </div>
+</nav>
