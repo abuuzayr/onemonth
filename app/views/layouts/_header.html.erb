@@ -19,6 +19,11 @@
       <a class="nav-item nav-link" href="#">
         <%= link_to "About", about_path %>
       </a>
+      <% if user_signed_in? %>
+        <a class="nav-item nav-link" href="#">
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+        </a>
+      <% end %>
     </ul>
   </div>
 </nav>
