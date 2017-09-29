@@ -3,6 +3,7 @@
 <p>
   <strong>Description:</strong>
   <%= @image.description %>
+  <%= image_tag @image.image.url(:medium) %>
 </p>
 
 <% if @image.user == current_user %>
