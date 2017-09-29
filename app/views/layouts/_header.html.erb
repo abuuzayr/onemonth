@@ -21,6 +21,9 @@
       </a>
       <% if user_signed_in? %>
         <a class="nav-item nav-link" href="#">
+          <%= link_to "Images", images_path %>
+        </a>
+        <a class="nav-item nav-link" href="#">
           <%= link_to "Account", edit_user_registration_path %>
         </a>
         <a class="nav-item nav-link" href="#">
